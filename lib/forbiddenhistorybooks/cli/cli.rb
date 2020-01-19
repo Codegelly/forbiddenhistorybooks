@@ -1,5 +1,5 @@
 class ForbiddenHistoryBooks::CLI
   def call 
-    scraper 
+    ForbiddenHistoryBooks::Scraper
   end   
 end 
