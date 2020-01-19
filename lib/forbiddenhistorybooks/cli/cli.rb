@@ -1,0 +1,3 @@
+class ForbiddenHistoryBooks::CLI
+
+end 
