@@ -9,17 +9,19 @@ class Forbiddenhistorybooks::Scraper
       puts title
      # puts title.text
     end
-     book_authors = doc.css("span div.authorName__container a.authorName span")
-     book_authors = book_authors.map{|au| au}
-     
-     book_authors.each do |author|
-       puts author.text #yass it worked! 
-    end
-    book_ratings = doc.css(".minirating text")
-    book_ratings = book_ratings.map{|ra| ra}
+    
+    book_authors = doc.css("span div.authorName__container a.authorName span").map{|au| au.text}
+    
+    book_authors.each do |author|
+      puts author
+    end 
+    
+    book_ratings = doc.css("span.minirating").map{|ra| ra.text}
     
     book_ratings.each do |rating|
-      puts rating.text 
-    end 
+      puts rating
+    end
+    #book_titles.each_with_index{|bkst, index|}
+    #binding.pry
   end 
 end  
