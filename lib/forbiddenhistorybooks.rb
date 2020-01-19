@@ -1,6 +1,2 @@
-require "forbiddenhistorybooks/version"
-
-module Forbiddenhistorybooks
-  class Error < StandardError; end
-  # Your code goes here...
-end
+require_relative "./forbiddenhistorybooks/version"
+require_relative './forbiddenhistorybooks/cli'
