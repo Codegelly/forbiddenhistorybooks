@@ -1,5 +1,5 @@
-class ForbiddenHistoryBooks::CLI
+class Forbiddenhistorybooks::CLI
   def call 
-    ForbiddenHistoryBooks::Scraper
+    Forbiddenhistorybooks::Scraper
   end   
 end 

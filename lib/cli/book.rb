@@ -1,15 +1,10 @@
-class ForbiddenHistoryBooks::Book
-
+class Forbiddenhistorybooks::Book
   @@allbooks = []
-
-
-   class Book
-     def initialize(name, author, rating)
-        @name = name
-        @author = author 
-        @rating = rating
-        @@allbooks << self
-     end
-
-
-   end
+  
+  def initialize(name, author, rating)
+    @name = name
+    @author = author 
+    @rating = rating
+    @@allbooks << self
+  end
+end
