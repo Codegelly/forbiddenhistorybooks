@@ -38,10 +38,10 @@ class Forbiddenhistorybooks::Scraper
   
   
   
-  zebra = 8 
-  x = Forbiddenhistorybooks::Book.all[zebra -1]
- # puts " #{x.name} by #{x.author} with #{x.rating}"
- x.print_my_info  
+#   zebra = 8 
+#   x = Forbiddenhistorybooks::Book.all[zebra -1]
+# # puts " #{x.name} by #{x.author} with #{x.rating}"
+# x.print_my_info  
  
 
   

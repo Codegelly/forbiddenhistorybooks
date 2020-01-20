@@ -15,6 +15,8 @@ class Forbiddenhistorybooks::CLI
   	while input != "exit" do
   	  if input.to_i > 0 || input.to_i < 29 
   		  puts "you chose book with position #{input}"
+        x = Forbiddenhistorybooks::Book.all[input.to_i-1]
+        x.print_my_info  
   		else 
   		  puts "Not sure what you're looking for, type a number between 1-28 or exit"
   		end
