@@ -6,5 +6,9 @@ class Forbiddenhistorybooks::Book
     @author = author 
     @rating = rating
     @@allbooks << self
-  end
+    puts "created new book: #{name}"
+  end  
 end
+
+
+  
