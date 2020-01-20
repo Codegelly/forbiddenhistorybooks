@@ -1,14 +1,10 @@
 class Forbiddenhistorybooks::CLI
   def call 
     Forbiddenhistorybooks::Scraper.scrape_books 
-    # Forbiddenhistorybooks::Book.all.each_with_index do |a, position|
-    #   puts "#{position +1}. #{a.name}"
-    # end 
     puts "--------------------------------------"
     puts "Booklist: Forbidden History of the USA"
     puts "--------------------------------------"
     puts " "
-    
     Forbiddenhistorybooks::Book.print_all
     menu
   end   
@@ -19,7 +15,6 @@ class Forbiddenhistorybooks::CLI
     
   	while input != "exit" do
   	  if input.to_i > 0 && input.to_i <= Forbiddenhistorybooks::Book.all.length 
-  		 # puts "you chose book with position #{input}"
         x = Forbiddenhistorybooks::Book.all[input.to_i-1]
         x.print_my_info  
   		else 

@@ -7,7 +7,6 @@ class Forbiddenhistorybooks::Book
     @author = author 
     @rating = rating
     @@allbooks << self
-    #puts "created new book: #{name}"
   end
   
   def print_my_info
