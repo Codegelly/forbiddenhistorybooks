@@ -23,7 +23,7 @@ class Forbiddenhistorybooks::Scraper
     #end
    
    book_titles.each_index do |a|
-    # puts "#{a} - #{book_titles[a]} by #{book_authors[a]} with a rating of: #{book_ratings[a]} "
+     puts "#{a} - #{book_titles[a]} by #{book_authors[a]} with a rating of: #{book_ratings[a]} "
    #  Book.new("1984", "george", "5")
      Forbiddenhistorybooks::Book.new(book_titles[a], book_authors[a], book_ratings[a])
    end 
