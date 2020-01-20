@@ -11,7 +11,13 @@ class Forbiddenhistorybooks::Book
   end
   
   def print_my_info
-    puts " #{@name} by #{@author} with #{@rating}"
+    puts " "
+    puts "--------------"
+    puts "#{@name}"
+    puts "by #{@author}"
+    puts "with #{@rating}"
+    puts "--------------"
+    puts " "
   end 
   
   def self.all
@@ -21,6 +27,7 @@ class Forbiddenhistorybooks::Book
   def self.print_all
     @@allbooks.each_with_index do |a, position|
       puts "#{position +1}. #{a.name}"
+      puts " "
     end 
   end 
   
