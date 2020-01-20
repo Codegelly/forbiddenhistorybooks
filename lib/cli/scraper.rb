@@ -27,5 +27,24 @@ class Forbiddenhistorybooks::Scraper
      Forbiddenhistorybooks::Author.new(book_authors[a], book_titles[a])
    end 
   
+  # x = Forbiddenhistorybooks::Book.all
+  # x.each do |a|
+  
+  # Forbiddenhistorybooks::Book.all.each_with_index do |a, position|
+  # #  puts " #{a.name} by #{a.author} with #{a.rating}"  
+  #   puts "#{position +1}. #{a.name}"
+  # end  
+  
+  
+  
+  
+  zebra = 8 
+  x = Forbiddenhistorybooks::Book.all[zebra -1]
+ # puts " #{x.name} by #{x.author} with #{x.rating}"
+ x.print_my_info  
+ 
+
+  
+  
   end 
 end  
