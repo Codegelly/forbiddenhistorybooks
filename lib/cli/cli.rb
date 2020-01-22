@@ -20,7 +20,7 @@ class Forbiddenhistorybooks::CLI
         x.print_my_info  
   		else 
   		  puts " "
-  		  puts "Not sure what you're looking for?"#, type a number between 1-#{Forbiddenhistorybooks::Book.all.length} or exit:"
+  		  puts "Not sure what you're looking for?"
   		  puts " "
   		end
   		puts "Enter another number between 1-#{Forbiddenhistorybooks::Book.all.length} or type exit to peace out !"
