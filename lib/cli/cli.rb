@@ -7,6 +7,7 @@ class Forbiddenhistorybooks::CLI
     puts " "
     Forbiddenhistorybooks::Book.print_all
     menu
+    goodbye
   end   
   
   def menu 
@@ -19,12 +20,15 @@ class Forbiddenhistorybooks::CLI
         x.print_my_info  
   		else 
   		  puts " "
-  		  puts "Not sure what you're looking for, type a number between 1-#{Forbiddenhistorybooks::Book.all.length} or exit:"
+  		  puts "Not sure what you're looking for?"#, type a number between 1-#{Forbiddenhistorybooks::Book.all.length} or exit:"
   		  puts " "
   		end
-  		puts "Enter a number to find a Forbidden history book or type exit to exit:"
+  		puts "Enter another number between 1-#{Forbiddenhistorybooks::Book.all.length} or type exit to peace out !"
   		input = gets.strip.downcase
   	end
   end 
   
+  def goodbye
+    puts "Bye Forbidden Book lover. See you next time!"
+  end
 end
