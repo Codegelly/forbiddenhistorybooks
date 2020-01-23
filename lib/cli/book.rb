@@ -19,6 +19,13 @@ class Forbiddenhistorybooks::Book
     puts " "
   end 
   
+  def self.find_books_by_author_name(author_name)
+    @@allbooks.each do |book|
+      puts "#{book}"
+      binding.pry
+    end
+  end
+  
   def self.all
     @@allbooks
   end 

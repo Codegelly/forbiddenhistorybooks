@@ -1,6 +1,7 @@
 class Forbiddenhistorybooks::CLI
   def call 
     Forbiddenhistorybooks::Scraper.scrape_books 
+    Forbiddenhistorybooks::Book.find_books_by_author
     puts "--------------------------------------"
     puts "Booklist: Forbidden History of the USA"
     puts "--------------------------------------"
